@@ -8,8 +8,61 @@
 // ======== OBJECTS DEFINITIONS ========
 // Define your objects here
 
-
+const dog = {
+    species: 'dog',
+    name: 'Hugo',
+    gender:'male',
+    legs: 4,
+    hands : 0,
+    saying: 'woof-woof',
+    friend : ['Velik','Timur']
+};
+const cat = {
+    species: 'cat',
+    name: 'Velik',
+    gender: 'male',
+    legs: 4,
+    hands: 0,
+    saying: 'mrr',
+    friend: ['Hugo','Lera']
+};
+const woman ={
+    species:'human',
+    name:'Lera',
+    gender: 'female',
+    legs:2,
+    hands:2,
+    saying:'I love cats',
+    friend : ['Velik']
+};
+const man = {
+    species: 'human',
+    name:'Timur',
+    gender:'male',
+    legs:2,
+    hands:2,
+    saying:'I love my mom',
+    friend:['Velik','Lera','Hugo']
+};
+const catwoman ={
+    species:'cat-woman',
+    name:'Meow',
+    gender:'female',
+    legs:2,
+    hands:2,
+    saying: cat.saying,
+    friend:['Lera']
+}
+function printObject(obj){
+    print(obj.species + ';' + obj.name + ';' + obj.gender + ';' + 
+    obj.legs + ';' + obj.hands + ';' + obj.saying + ';' + obj.friend);
+}
 // ======== OUTPUT ========
+printObject(dog);
+printObject(cat);
+printObject(woman);
+printObject(man);
+printObject(catwoman);
 /* Use print(message) for output.
    Default tag for message is <pre>. Use print(message,'div') to change containing element tag.
 
